@@ -1,0 +1,14 @@
+
+If you got the source from git, run "./autogen.sh", which will
+run the various auto* programs. Then you can run ./configure, and
+refer to the above instructions.
+
+If it doesn't build for you:
+
+  If you have problems finding libraries, try
+    CPPFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" \
+    ./configure
+  or
+    ./configure --with-libevent-dir=/usr/local
+  rather than simply ./configure.
+
